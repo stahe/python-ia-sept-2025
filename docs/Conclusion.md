@@ -1,0 +1,2 @@
+# 11. Conclusion
+Des paragraphes qui précèdent, on retiendra que seules les IA [ChatGPT, Grok, Gemini] ont su résoudre les trois problèmes proposés. On retiendra également que les tests 2 et 3 ont été faits sur un exemple précis, celui d’une génération de code Python, et qu’il ne faut donc pas généraliser cette conclusion. Mais sur ce problème précis de génération de code Python, les IA qui ont résolu les problèmes 2 et 3 se sont montrées bien supérieures aux autres IA.

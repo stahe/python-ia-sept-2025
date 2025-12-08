@@ -1,0 +1,12 @@
+site/
+__pycache__/
+site_archive.zip
+site/
+__pycache__/
+
+# Fichiers de développement et sources
+*.docx
+*.py
+*.txt
+site_archive.zip
+*.php
