@@ -21,7 +21,7 @@ markdown_extensions:
 extra:
   analytics:
     provider: google
-    property: G-XXXXXXXXXX  # REMETTEZ VOTRE ID ICI
+    property: G-EBZC3JVJNR  # REMETTEZ VOTRE ID ICI
 
 nav:
   - "1. Introduction": Introduction.md
