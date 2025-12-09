@@ -10,7 +10,7 @@ On va demander aux IA d’étudier trois problèmes du plus simple au plus compl
 - En [1], l’URL de Gemini ;
 - En [2], la version de Gemini utilisée ;
 - En [3-5], les trois problèmes posés à Gemini ;
-### 2.0.1. Problème 1
+## 2.1. Problème 1
 Le problème 1 est une simple question :
 
 <table>
@@ -21,7 +21,7 @@ Le problème 1 est une simple question :
 </table>
 Toutes les IA répondront correctement à cette question.
 
-### 2.0.2. Problème 2
+## 2.2. Problème 2
 Le problème 2 est le suivant (copie d’écran de Gemini) :
 
 <table>
@@ -37,7 +37,7 @@ On est là exactement dans le même cas que celui d’un TD donné à l’univer
 
 Les IA testées vont résoudre le problème à l’exception de MistralAI et Perplexity.
 
-### 2.0.3. Problème 3
+## 2.3. Problème 3
 Toujours avec une copie d’écran de Google Gemini, le problème 3 est le suivant :
 
 <table>

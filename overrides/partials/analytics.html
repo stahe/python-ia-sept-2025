@@ -1,0 +1,16 @@
+
+{% if config.extra.analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ config.extra.analytics.property }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // CONFIGURATION PERSONNALISÉE :
+    // On force le 'page_title' à être le nom du site pour TOUTES les pages.
+    // Ainsi, GA regroupera tout sous une seule entrée.
+    gtag('config', '{{ config.extra.analytics.property }}', {
+        'page_title': '{{ config.site_name | replace("'", "\'") }}'
+    });
+  </script>
+{% endif %}

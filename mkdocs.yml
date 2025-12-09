@@ -4,7 +4,7 @@ use_directory_urls: false
 
 theme:
   name: material
-  custom_dir: overrides  # Activation du dossier pour les partiels personnalisés (footer, etc.)
+  custom_dir: overrides
   features:
     - navigation.sections
     - navigation.indexes
@@ -18,11 +18,10 @@ markdown_extensions:
   - admonition
   - attr_list
 
-# Configuration Google Analytics
 extra:
   analytics:
     provider: google
-    property: G-XXXXXXXXXX  # Pensez à remettre votre ID
+    property: G-XXXXXXXXXX  # REMETTEZ VOTRE ID ICI
 
 nav:
   - "1. Introduction": Introduction.md
