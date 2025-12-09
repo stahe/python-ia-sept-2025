@@ -10,6 +10,26 @@ theme:
     - navigation.indexes
     - toc.integrate
 
+  # --- COULEURS ET MODE SOMBRE ---
+  palette:
+    # Mode Clair
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Passer en mode sombre
+
+    # Mode Sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Passer en mode clair
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -21,7 +41,7 @@ markdown_extensions:
 extra:
   analytics:
     provider: google
-    property: G-EBZC3JVJNR  # REMETTEZ VOTRE ID ICI
+    property: G-EBZC3JVJNR  # <--- VOTRE ID ANALYTICS ICI
 
 nav:
   - "1. Introduction": Introduction.md
