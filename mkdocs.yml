@@ -1,10 +1,11 @@
 site_name: "Générer un script Python avec des outils d'IA"
-site_url: "https://stahe.github.io/python-ia-sept2025/"
+site_url: "https://stahe.github.io/python-ia-sept-2025/"
 site_description: "Tutoriel complet pour apprendre à générer des scripts Python automatisés grâce aux outils d'IA."
 site_author: "Serge Tahé"
 use_directory_urls: false
-repo_url: "https://github.com/stahe/python-ia-sept2025"
+repo_url: "https://github.com/stahe/python-ia-sept-2025"
 repo_name: "GitHub"
+
 theme:
   name: material
   custom_dir: overrides
@@ -28,6 +29,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Passer en mode clair
+
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
@@ -35,12 +37,22 @@ markdown_extensions:
   - pymdownx.superfences
   - admonition
   - attr_list
+
+# Scripts pour le Mode Focus
+extra_javascript:
+  - javascripts/focus.js
+
+extra_css:
+  - stylesheets/focus.css
+
 plugins:
   - search
+
 extra:
   analytics:
     provider: google
     property: G-EBZC3JVJNR 
+
 nav:
   - "1. Introduction": Introduction.md
   - "2. Les trois probl\u00e8mes \u00e9tudi\u00e9s et les r\u00e9sultats": Les trois problèmes étudiés et les résultats.md
