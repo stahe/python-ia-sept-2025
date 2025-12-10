@@ -11,6 +11,7 @@ Voici une première copie d’écran d’une session ChatGPT :
 - En [1-3], les trois problèmes posés à ChatGPT ;
 - En [4], l’URL de ChatGPT ;
 - En [5], la version de ChatGPT utilisée ;
+
 ChatGPT est un produit de OpenAI disponible à l’URL [https://chatgpt.com/]. Pour avoir un historique de vos sessions de questions / réponses comme ci-dessus, il vous faut créer un compte. Par ailleurs, comme toutes les autres IA testées, ChatGPT limite le nombre de vos questions et le nombre de fichiers téléchargés. Quand cette limite est atteinte, la session est terminée et on vous propose de la continuer plus tard dans le temps. Les limites imposées par ChatGPT sont atteintes très rapidement. Pour faire ce tutoriel, j’ai du prendre un abonnement payant d’un mois.
 
 L’interface de ChatGPT est la suivante :
@@ -635,6 +636,7 @@ if __name__ == "__main__":
 
 - Lignes 11-24, les 14 tests imposés ;
 - Lignes 5-55 : ce code vient du script généré par ChatGPT. On va imposer à Gemini d’utiliser ce code pour faciliter les comparaisons entre les deux scripts générés.
+
 On commence par ChatGPT :
 
 <table>

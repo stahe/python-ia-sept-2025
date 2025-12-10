@@ -13,6 +13,7 @@ Nous rappelons la première copie d’écran de Gemini donnée précédemment :
 - En [1], l’URL de Gemini ;
 - En [2], la version de Gemini utilisée ;
 - En [3-5], les trois problèmes posés à Gemini ;
+
 Gemini est un produit de Google disponible à l’URL [https://gemini.google.com/]. Pour avoir un historique de vos sessions de questions / réponses comme ci-dessus, il vous faut créer un compte. Par ailleurs, comme toutes les autres IA testées, Gemini limite le nombre de vos questions et le nombre de fichiers téléchargés. Quand cette limite est atteinte, la session est terminée et on vous propose de la continuer plus tard dans le temps. Comme il est assez frustrant de s’arrêter en plein milieu d’une session, j’ai pris un abonnement. Le premier mois de l’abonnement Gemini est par chance gratuit. J’ai fait de même avec les autres IA qui avaient ces limites, à savoir ChatGPT, MistralAI, ClaudeAI. J’ai pris un abonnement d’un mois, mais là le premier mois était payant. Je n’ai pas rencontré de limites avec Grok. DeepSeek n’annonce pas de limites mais répond parfois [Server busy] et interrompt la session. Ca revient à mettre des limites sans le dire.
 
 Dans la suite, je parlerai de session de questions / réponses, raccourcie à session simplement. Les IA utilisent le plus souvent le terme anglais chat (discussion) ou conversation.
@@ -39,6 +40,7 @@ La session pour le problème 1 est la suivante :
 </table>
 - En [1], la question ;
 - En [2], le début de la réponse de Gemini ;
+
 La suite de la réponse est la suivante :
 
 <table>
@@ -79,9 +81,8 @@ On rappelle ici le problème initial du cours [[python3-flask-2020](https://tahe
 </table>
 Le tableau ci-dessus permet de calculer l’impôt dans le cas simplifié d'un contribuable n'ayant que son seul salaire à déclarer. Comme l’indique la note (1), l’impôt ainsi calculé est l’impôt avant trois mécanismes :
 
-Le plafonnement du quotient familial qui intervient pour les hauts revenus ;
-
-La décote et la réduction d’impôts qui interviennent pour les faibles revenus ;
+- Le plafonnement du quotient familial qui intervient pour les hauts revenus ;
+- La décote et la réduction d’impôts qui interviennent pour les faibles revenus ;
 
 Ainsi le calcul de l’impôt comprend les étapes suivantes [http://impotsurlerevenu.org/comprendre-le-calcul-de-l-impot/1217-calcul-de-l-impot-2019.php] :
 
@@ -98,26 +99,18 @@ L’impôt brut peut être calculé de la façon suivante :
 
 On calcule d’abord le nombre de parts du contribuable :
 
-Chaque parent amène 1 part ;
-
-Les deux premiers enfants amènent chacun 1/2 part ;
-
-Les enfants suivants amènent une part chacun :
+- Chaque parent amène 1 part ;
+- Les deux premiers enfants amènent chacun 1/2 part ;
+- Les enfants suivants amènent une part chacun :
 
 Le nombre de parts est donc :
 
-nbParts=1+nbEnfants*0,5+(nbEnfants-2)*0,5 si le salarié n’est pas marié ;
-
-nbParts=2+nbEnfants*0,5+(nbEnfants-2)*0,5 s'il est marié ;
-
-où nbEnfants est son nombre d'enfants ;
-
-On calcule le revenu imposable R=0.9*S où S est le salaire annuel ;
-
-On calcule le quotient familial QF=R/nbParts ;
-
-On calcule l’impôt brut I d'après les données suivantes (2019) :
-
+- nbParts=1+nbEnfants*0,5+(nbEnfants-2)*0,5 si le salarié n’est pas marié ;
+- nbParts=2+nbEnfants*0,5+(nbEnfants-2)*0,5 s'il est marié ;
+- où nbEnfants est son nombre d'enfants ;
+- On calcule le revenu imposable R=0.9*S où S est le salaire annuel ;
+- On calcule le quotient familial QF=R/nbParts ;
+- On calcule l’impôt brut I d'après les données suivantes (2019) :
 <table>
 <tr>
 <td>9964</td>
@@ -202,10 +195,8 @@ L’impôt brut avec 2 parts déjà calculé au paragraphe précédent 2115 euro
 
 De façon générale, l’impôt brut est sup(impôt1, impôt2) où :
 
-[impôt1] : est l’impôt brut calculé avec les enfants ;
-
-[impôt2] : est l’impôt brut calculé sans les enfants et diminué du gain maximal (ici 1551 euros par demi-part) lié aux enfants ;
-
+- [impôt1] : est l’impôt brut calculé avec les enfants ;
+- [impôt2] : est l’impôt brut calculé sans les enfants et diminué du gain maximal (ici 1551 euros par demi-part) lié aux enfants ;
 #### 4.3.1.3. Calcul de la décote
 <table>
 <tr>
@@ -236,20 +227,16 @@ Il faut observer deux règles dans le calcul de la décote (certains outils d’
 </table>
 Au-dessous d’un certain seuil, une réduction de 20 % est faite sur l’impôt brut issu des calculs précédents. En 2019, les seuils sont les suivants :
 
-célibataire : 21037 euros ;
-
-couple : 42074 euros ; (le chiffre 37968 utilisé dans l’exemple ci-dessus semble erroné) ;
+- célibataire : 21037 euros ;
+- couple : 42074 euros ; (le chiffre 37968 utilisé dans l’exemple ci-dessus semble erroné) ;
 
 Ce seuil est augmenté de la valeur : 3797 * (nombre de demi-parts amenées par les enfants).
 
 Toujours pour le salarié marié avec deux enfants et un salaire annuel S de 50000 euros :
 
-Son revenu imposable (45000 euros) est inférieur au seuil (42074+2*3797)=49668 euros ;
-
-Il a donc droit à une réduction de 20 % de son impôt : 1731 * 0,2= 346,2 euros arrondi à 347 euros ;
-
-L’impôt brut du contribuable devient : 1731-347= 1384 euros ;
-
+- Son revenu imposable (45000 euros) est inférieur au seuil (42074+2*3797)=49668 euros ;
+- Il a donc droit à une réduction de 20 % de son impôt : 1731 * 0,2= 346,2 euros arrondi à 347 euros ;
+- L’impôt brut du contribuable devient : 1731-347= 1384 euros ;
 #### 4.3.1.5. Calcul de l’impôt net
 Notre calcul s’arrêtera là : l’impôt net à payer sera de 1384 euros. Dans la réalité, le contribuable peut bénéficier d’autres réductions notamment pour des dons à des organismes d’intérêt public ou général.
 
@@ -259,36 +246,26 @@ Notre exemple précédent correspond à la majorité des cas de salariés. Cepen
 ##### 4.3.1.6.1. Plafonnement de la réduction de 10 % sur les revenus annuels
 Dans la plupart des cas, le revenu imposable est obtenu par la formule : R=0,9*S où S est le salaire annuel. On appelle cela la réduction des 10 %. Cette réduction est plafonnée. En 2019 :
 
-Elle ne peut être supérieure à 12502 euros ;
-
-Elle ne peut être inférieure à 437 euros ;
+- Elle ne peut être supérieure à 12502 euros ;
+- Elle ne peut être inférieure à 437 euros ;
 
 Prenons le cas d’un salarié non marié sans enfants et un salaire annuel de 200000 euros :
 
-La réduction de 10 % est de 20000 euros > 12502 euros. Elle est donc ramenée à 12502 euros ;
+- La réduction de 10 % est de 20000 euros > 12502 euros. Elle est donc ramenée à 12502 euros ;
 
 ##### 4.3.1.6.2. Plafonnement du quotient familial
 Prenons un cas où le plafonnement familial présenté au paragraphe |Plafonnement du quotient familial|, intervient. Prenons le cas d’un couple avec trois enfants et des revenus annuels de 100000 euros. Reprenons les étapes du calcul :
 
-L’abattement de 10 % est de 100000 euros < 12502 euros. Le revenu imposable R est donc 100000-10000=90000 euros ;
-
-Le couple a nbParts=2+0,5*2+1=4 parts ;
-
-Son quotient familial est donc QF= R/nbParts=90000/4=22500 euros ;
-
-Son impôt brut I1 avec enfants est I1=0,14*90000-1394,96*4= 7020 euros ;
-
-Son impôt brut I2 sans enfants :
-
-QF=90000/2=45000 euros ;
-
-I2=0,3*90000-5798*2=15404 euros ;
-
-La règle du plafonnement du quotient familial dit que le gain amené par les enfants ne peut dépasser (1551*4 demi-parts)=6204 euros. Or ici, il est I2-I1=15404-7020= 8384 euros, donc supérieur à 6204 euros ;
-
-L’impôt brut est donc recalculé comme I3=I2-6204=15404-6204= 9200 euros ;
-
-Comme I3>I1, ce sera l’impôt I3 qui sera conservé ;
+- L’abattement de 10 % est de 100000 euros < 12502 euros. Le revenu imposable R est donc 100000-10000=90000 euros ;
+- Le couple a nbParts=2+0,5*2+1=4 parts ;
+- Son quotient familial est donc QF= R/nbParts=90000/4=22500 euros ;
+- Son impôt brut I1 avec enfants est I1=0,14*90000-1394,96*4= 7020 euros ;
+- Son impôt brut I2 sans enfants :
+- QF=90000/2=45000 euros ;
+- I2=0,3*90000-5798*2=15404 euros ;
+- La règle du plafonnement du quotient familial dit que le gain amené par les enfants ne peut dépasser (1551*4 demi-parts)=6204 euros. Or ici, il est I2-I1=15404-7020= 8384 euros, donc supérieur à 6204 euros ;
+- L’impôt brut est donc recalculé comme I3=I2-6204=15404-6204= 9200 euros ;
+- Comme I3>I1, ce sera l’impôt I3 qui sera conservé ;
 
 Ce couple n’aura ni décote, ni réduction et son impôt final sera de 9200 euros.
 
@@ -359,17 +336,15 @@ Le calcul de l’impôt est complexe. Tout au long du document, les tests seront
 </table>
 Ci-dessus, on appelle surcote, ce que paient en plus les hauts revenus à cause de deux phénomènes :
 
-Le plafonnement de l’abattement de 10 % sur les revenus annuels ;
-
-Le plafonnement du quotient familial ;
+- Le plafonnement de l’abattement de 10 % sur les revenus annuels ;
+- Le plafonnement du quotient familial ;
 
 Cet indicateur n’a pu être vérifié car le simulateur de l’administration fiscale ne le donne pas.
 
 On voit que l’algorithme du document donne un impôt juste à chaque fois, avec cependant une marge d’erreur de 1 euro. Cette marge d’erreur provient des arrondis. Toutes les sommes d’argent sont arrondies parfois à l’euro supérieur, parfois à l’euro inférieur. Comme je ne connaissais pas les règles officielles, les sommes d’argent de l’algorithme du document ont été arrondies :
 
-À l’euro supérieur pour les décotes et réductions ;
-
-À l’euro inférieur pour les surcotes et l’impôt final ;
+- À l’euro supérieur pour les décotes et réductions ;
+- À l’euro inférieur pour les surcotes et l’impôt final ;
 
 Nous allons demander à l’IA de faire ce calcul d’impôt.
 
@@ -385,6 +360,7 @@ La question posée à Gemini s’accompagne de deux fichiers :
 - En [1], le calcul qui vient d’être détaillé a été mis dans un PDF qui est donné à Gemini. Gemini va y trouver les règles exactes de calcul simplifié de l’impôt 2019 sur les revenus 2018 ;
 - En [2], nos instructions ;
 - En [3] pour lancer l’IA ;
+
 Nos instructions dans le fichier texte [instructionsAvecPDF.txt] sont les suivantes :
 
 ```python linenums="1"
@@ -468,6 +444,7 @@ La première réponse de Gemini est la suivante :
 </tr>
 </table>
 - En [1-4], Gemini fournit des liens sur la partie du PDF ou du fichier texte des instructions qu’il utilise à un moment donné ;
+
 La suite est la suivante :
 
 <table>
@@ -479,6 +456,7 @@ La suite est la suivante :
 - En [1], Gemini affirme qu’il a exécuté les 11 tests unitaires avec succès. La plupart des IA ont affirmé cela aussi bien sur le problème 2 que le problème 3 et souvent lorsqu’on chargeait le script généré ça ne marchait pas. Il faut donc se méfier de cette affirmation. Pour Gemini cela va s’avérer vrai ;
 - En [2], un lien qui s’avérera ne pas marcher ;
 - En [3 seule Gemini a donné un temps d’exécution réaliste ;
+
 Donc le lien [2] ne marche pas. On le dit à Gemini :
 
 <table>
@@ -496,6 +474,7 @@ La réponse de Gemini :
 </tr>
 </table>
 - En [1], le script Python généré par Gemini ;
+
 On charge ce script dans PyCharm et on l’exécute :
 
 <table>
@@ -505,6 +484,7 @@ On charge ce script dans PyCharm et on l’exécute :
 </tr>
 </table>
 - En [1], [gemini1] est le script généré par Gemini ;
+
 A l’exécution du script apparaissent des erreurs de compilation :
 
 ```python linenums="1"
@@ -542,6 +522,7 @@ Empty suite
 ```
 
 - Ligne 30, l’erreur de compilation. [cite_start] est un marqueur pour générer une certaine forme de texte ;
+
 On met les logs ci-dessus dans un fichier [logs gemini1.txt] et on donne celui-ci à Gemini :
 
 <table>
@@ -835,6 +816,7 @@ Le fichier des instructions en [1] est quasiment le même que pour le problème 
 ```
 
 - En [3], on lui dit de trouver sur internet les règles de calcul de l’impôt 2019 sur les revenus 2018. C’est un exercice plus difficile que le précédent ;
+
 Je ne donne ci-dessous que des parties de la première réponse de Gemini :
 
 <table>
@@ -921,6 +903,7 @@ Process finished with exit code 1
 
 - Ligne 11, un test a échoué ;
 - Lignes 25, 42 : une même erreur de compilation ;
+
 On met ces logs dans un fichier texte qu’on donne à Gemini :
 
 <table>

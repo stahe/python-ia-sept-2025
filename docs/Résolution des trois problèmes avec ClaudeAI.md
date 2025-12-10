@@ -35,6 +35,7 @@ J’ai joint deux fichiers à ma question :
 
 - Le PDF généré par ChatGPT [Le problème selon ChatGPT.pdf] ;
 - Mes instructions dans le fichier texte [InstructionsAvecPDF4.txt]. C’est celui qui impose les 25 tests unitaires proposés par ChatGPT ;
+
 La première réponse est incorrecte. On donne les logs de l’exécution :
 
 <table>

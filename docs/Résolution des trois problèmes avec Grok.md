@@ -11,6 +11,7 @@
 - En [3], posez votre question ;
 - En [4], vous pouvez joindre des fichiers ;
 - En [5], vous lancez l’exécution de l’IA ;
+
 Contrairement à Gemini et ChatGPT, je n’ai pas rencontré de limites de questions, de temps ou de nombre de fichiers joints. Cela ne veut pas dire que ces limites n’existent pas.
 
 ## 6.2. Le problème 1
