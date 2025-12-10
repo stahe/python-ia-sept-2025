@@ -1,0 +1,4 @@
+
+        body.focus-mode .md-sidebar { display: none !important; }
+        body.focus-mode .md-main__inner { max-width: none !important; margin: 0 2rem; }
+        
