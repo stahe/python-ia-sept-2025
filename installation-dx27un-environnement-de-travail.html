@@ -1,0 +1,982 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Tutoriel complet pour générer du code Python.">
+      
+      
+        <meta name="author" content="Serge Tahé">
+      
+      
+        <link rel="canonical" href="https://stahe.github.io/python-ia-sept-2025/installation-dx27un-environnement-de-travail.html">
+      
+      
+        <link rel="prev" href="les-trois-problemes-etudies-et-les-resultats.html">
+      
+      
+        <link rel="next" href="resolution-des-trois-problemes-avec-google-gemini.html">
+      
+      
+        
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>3. Installation d'un environnement de travail - Générer un script Python avec des outils d’IA</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/focus.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#3-installation-dun-environnement-de-travail" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="index.html" title="Générer un script Python avec des outils d’IA" class="md-header__button md-logo" aria-label="Générer un script Python avec des outils d’IA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Générer un script Python avec des outils d’IA
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              3. Installation d&#x27;un environnement de travail
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer au mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="purple"  aria-label="Passer au mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer au mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/stahe/python-ia-sept-2025" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="index.html" title="Générer un script Python avec des outils d’IA" class="md-nav__button md-logo" aria-label="Générer un script Python avec des outils d’IA" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Générer un script Python avec des outils d’IA
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/stahe/python-ia-sept-2025" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="index.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="introduction.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1. Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="les-trois-problemes-etudies-et-les-resultats.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    2. Les trois problèmes étudiés et les résultats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Installation d&#x27;un environnement de travail
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="installation-dx27un-environnement-de-travail.html" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    3. Installation d&#x27;un environnement de travail
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#31-python-3137" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1. Python 3.13.7
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#32-lide-pycharm-community" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2. L&#x27;IDE PyCharm Community
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resolution-des-trois-problemes-avec-google-gemini.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Résolution des trois problèmes avec Google Gemini
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resolution-des-trois-problemes-avec-chatgpt.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    5. Résolution des trois problèmes avec ChatGPT
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resolution-des-trois-problemes-avec-grok.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    6. Résolution des trois problèmes avec Grok
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resolution-des-trois-problemes-avec-claudeai.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    7. Résolution des trois problèmes avec ClaudeAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resolution-des-trois-problemes-avec-mistralai.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8. Résolution des trois problèmes avec MistralAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resolution-des-trois-problemes-avec-deepseek.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    9. Résolution des trois problèmes avec DeepSeek
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="resolution-des-trois-problemes-avec-perplexity.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10. Résolution des trois problèmes avec Perplexity
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="conclusion.html" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11. Conclusion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="3-installation-dun-environnement-de-travail">3. Installation d&#x27;un environnement de travail</h1>
+<p>Nous montrons ici l’environnement de travail utilisé pour tester les scripts Python générés par l’IA. Ce paragraphe est pour les débutants en Python. Si vous avez déjà un environnement de travail Python, passez la totalité de ce paragraphe et allez au <a href="#_Résolution_des_trois"><u><u>paragraphe suivant</u></u></a>.</p>
+<h2 id="31-python-3137">3.1. Python 3.13.7</h2>
+<p>Les exemples de ce document ont été testés avec l&#x27;interpréteur Python 3.13.7 disponible à l&#x27;URL |<a href="https://www.python.org/downloads/"><u><u>https://www.python.org/downloads/</u></u></a>| (août 2025) sur une machine Windows 10 :</p>
+<p><img src="images/10000000000003C30000033E1D776723.png" style="width:10.19cm;height:8.781cm;" alt="Image" /></p>
+<p>En [1-2] téléchargez l’exécutable de l’installateur de Python puis exécutez-le.</p>
+<p>L&#x27;installation de Python donne naissance à l&#x27;arborescence de fichiers <strong>[1]</strong> suivante :</p>
+<p><img src="images/10000000000001790000021364FBC309.png" style="width:5.32cm;height:7.489cm;" alt="Image" /></p>
+<p>Pour exécuter Python en mode interactif, double-cliquez sur [2]. Voici un exemple de code Python à exécuter :</p>
+<p><img src="images/100000000000019F000000D1975BB901.png" style="width:5.86cm;height:2.949cm;" alt="Image" /></p>
+<p>Le prompt &gt;&gt;&gt; permet d&#x27;émettre une instruction Python qui est immédiatement exécutée. Le code tapé ci-dessus a la signification suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
+<span class="normal"><a href="#__codelineno-0-2">2</a></span>
+<span class="normal"><a href="#__codelineno-0-3">3</a></span>
+<span class="normal"><a href="#__codelineno-0-4">4</a></span>
+<span class="normal"><a href="#__codelineno-0-5">5</a></span>
+<span class="normal"><a href="#__codelineno-0-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="o">&gt;&gt;&gt;</span> <span class="n">nom</span><span class="o">=</span><span class="s2">&quot;tintin&quot;</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;nom=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">nom</span><span class="p">)</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="n">nom</span><span class="o">=</span><span class="n">tintin</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;type=</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">type</span><span class="p">(</span><span class="n">nom</span><span class="p">))</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5"></a><span class="nb">type</span><span class="o">=&lt;</span><span class="k">class</span><span class="w"> </span><span class="err">&#39;</span><span class="nc">str</span><span class="s1">&#39;&gt;</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="o">&gt;&gt;&gt;</span>
+</code></pre></div></td></tr></table></div>
+<p><strong>Lignes</strong> :</p>
+<ul>
+<li>1 : initialisation d&#x27;une variable. En Python, on ne déclare pas le type des variables. Celles-ci ont automatiquement le type de la valeur qu&#x27;on leur affecte. Ce type peut changer au cours du temps ;</li>
+<li>2 : affichage du nom. &#x27;nom=%s&#x27; est un format d&#x27;affichage où %s est un paramètre formel désignant une chaîne de caractères. nom est le paramètre effectif qui sera affiché à la place de %s ;</li>
+<li>3 : le résultat de l&#x27;affichage ;</li>
+<li>4 : l&#x27;affichage du type de la variable nom ;</li>
+<li>5 : la variable nom est ici de type class. Avec Python 2.7 elle aurait la valeur &lt;type &#x27;str&#x27;&gt; ;
+Maintenant, ouvrons une console Windows :</li>
+</ul>
+<p><img src="images/1000000000000448000000DC8C8ABD0C.png" style="width:15.499cm;height:3.11cm;" alt="Image" /></p>
+<p>Le fait qu&#x27;on ait pu taper <strong>[python]</strong> en <strong>[1]</strong> et que l&#x27;exécutable <strong>[python.exe]</strong> ait été trouvé montre que celui-ci est dans le PATH de la machine Windows. C&#x27;est important car cela signifie que les outils de développement Python sauront trouver l&#x27;interpréteur Python. On peut le vérifier ainsi :</p>
+<p><img src="images/100000000000052F000001AB84273FD6.png" style="width:17.999cm;height:5.791cm;" alt="Image" /></p>
+<ul>
+<li>En <strong>[1]</strong>, on quitte l&#x27;interpréteur Python ;</li>
+<li>En <strong>[2]</strong>, la commande qui affiche le PATH des exécutables de la machine Windows ;</li>
+<li>En <strong>[3]</strong>, on voit que le dossier de l&#x27;interpréteur Python 3.13 fait partie du PATH ;</li>
+</ul>
+<h2 id="32-lide-pycharm-community">3.2. L&#x27;IDE PyCharm Community</h2>
+<p>Pour construire et exécuter les scripts de ce document, nous avons utilisé l&#x27;éditeur <strong>[PyCharm]</strong> Edition Community disponible (août 2025) à l&#x27;URL |<a href="https://www.jetbrains.com/fr-fr/pycharm/download/%23section=windows"><u><u>https://www.jetbrains.com/fr-fr/pycharm/download/#section=windows</u></u></a>| :</p>
+<p><img src="images/1000000000000350000003B6768D2593.png" style="width:8.98cm;height:10.059cm;" alt="Image" /></p>
+<p><img src="images/1000000000000205000000F0EAD6AAD0.png" style="width:5.47cm;height:2.54cm;" alt="Image" /></p>
+<p>Téléchargez l&#x27;IDE PyCharm Community (ici pour Windows) <strong>[1-4]</strong> et installez-le.</p>
+<p>Lançons l&#x27;IDE PyCharm. Un panneau de configuration apparaît :</p>
+<p><img src="images/10000000000002E40000022D33F53C1C.png" style="width:7.84cm;height:5.9cm;" alt="Image" /></p>
+<ul>
+<li>En [1] pour créer l’icône PyCharm sur le bureau ;</li>
+<li>En [2] pour ouvrir n’importe quel dossier du système de fichiers comme un projet Python ;</li>
+<li>En [3], les fichiers Python auront le suffixe .py ;</li>
+<li>En [4], passer à l’étape suivante ;
+La fenêtre suivante propose de nouveau de la configuration [1] :</li>
+</ul>
+<p><img src="images/10000000000004370000039D9F52BCA9.png" style="width:11.37cm;height:9.751cm;" alt="Image" /></p>
+<ul>
+<li>En [2], on prend le thème [Light]. Le lecteur prendra le thème de son choix ;</li>
+<li>En [3], on laisse l’IDE en anglais ;</li>
+<li>En [4], on garde les raccourcis de Windows ;
+ Créons un premier projet Python [1-2] :</li>
+</ul>
+<p><img src="images/100000000000056A0000020AC0E6D732.png" style="width:12.16cm;height:4.581cm;" alt="Image" /></p>
+<p>Cela ouvre la fenêtre suivante :</p>
+<p><img src="images/1000000000000770000003F35F07ECD2.png" style="width:17.999cm;height:9.557cm;" alt="Image" /></p>
+<ul>
+<li>En [2], indiquer le nom du dossier à créer pour le projet ;</li>
+<li>En [3], indiquer que les différentes versions du code qui seront sauvegardées seront gérées par le gestionnaire de versions Git. PyCharm permet d’en utiliser d’autres ;</li>
+<li>En [4-6], indiquer que votre projet va utiliser un environnement virtuel. L’environnement virtuel va créer un dossier [.venv] à la racine du projet. Tous les plugins (packages) utilisés par votre projet iront dans ce dossier. Cela assure une étanchéité entre projets lorsqu’il y a recherche de plugins. Le projet ne cherche ses plugins que dans son propre environnement virtuel [.venv] et pas ailleurs où il pourrait trouver des plugins de mêmes noms mais de versions peut-être différentes qui sont parfois partiellement incompatibles entre elles ;
+L&#x27;IDE PyCharm présente le projet créé sous la forme suivante :</li>
+</ul>
+<p><img src="images/1000000000000231000001339349AD15.png" style="width:4.949cm;height:2.709cm;" alt="Image" /></p>
+<ul>
+<li>En [1-2], l’arborescence du projet ;</li>
+<li>En [3], le dossier du projet ;</li>
+<li>En [4], le dossier de l’environnement virtuel du projet. C’est dans ce dossier que s’installeront les plugins que nous utiliserons pour le projet ;
+Avant de commencer à coder, allons plus loin dans la configuration de l’IDE :</li>
+</ul>
+<p><img src="images/100000000000014B000000C3A5AE436A.png" style="width:4.671cm;height:2.75cm;" alt="Image" /></p>
+<ul>
+<li>Cliquer sur [1] pour faire apparaître le menu principal ;</li>
+</ul>
+<p><img src="images/10000000000001DB00000206601EF987.png" style="width:5.031cm;height:5.48cm;" alt="Image" /></p>
+<ul>
+<li>En [1-2], configurez l’IDE ;</li>
+</ul>
+<p><img src="images/10000000000003F7000002C8C9A0B9F5.png" style="width:10.749cm;height:7.541cm;" alt="Image" /></p>
+<ul>
+<li>En [1-4], indiquez que vous voulez voir le menu principal au-dessus de la barre d’outils principale. Rien ne vous y oblige. On le fait ici pour éclairer les copies d’écran qui sont produites dans ce document. Validez votre changement ;
+Désormais, le menu principal est toujours affiché [1] :</li>
+</ul>
+<p><img src="images/100000000000033F00000164BC5ACCBA.png" style="width:8.8cm;height:3.769cm;" alt="Image" /></p>
+<p>Continuons la configuration de l’IDE :</p>
+<p><img src="images/1000000000000120000000ABAB5ED904.png" style="width:3.05cm;height:1.81cm;" alt="Image" /></p>
+<p>En haut à droite de la fenêtre de PyCharm, on propose d’essayer la version pro de PyCharm. Selon la façon dont vous avez installé PyCharm, il se peut même que la version pro ait été installée d’office (2025). Cela amène des options de menu supplémentaires.</p>
+<p><img src="images/10000000000000F700000097DDBD158B.png" style="width:2.619cm;height:1.6cm;" alt="Image" /></p>
+<p>Si vous avez installé la version pro d’évaluation pour un essai d’un mois, vous avez le message [2] en haut à droite.</p>
+<p>Toujours pour la cohérence des copies d’écran qui vont suivre, je montre comment annuler la version d’essai pro de l’IDE (vous pouvez y revenir quand vous voulez) :</p>
+<p><img src="images/100000000000022100000385F580CE40.png" style="width:5.77cm;height:9.541cm;" alt="Image" /></p>
+<ul>
+<li>En [1-2], gérez les souscriptions de votre IDE ;</li>
+</ul>
+<p><img src="images/10000000000004660000017297512600.png" style="width:11.869cm;height:3.9cm;" alt="Image" /></p>
+<ul>
+<li>En [1], désactivez la version pro. L’IDE va se relancer ;
+Maintenant configurons l’interpréteur Python qui va exécuter notre projet. Nous nous souvenons d’en avoir téléchargé un lors d’une étape précédente :</li>
+</ul>
+<p><img src="images/10000000000001B10000021D45A1E9E0.png" style="width:4.59cm;height:5.731cm;" alt="Image" /></p>
+<p><img src="images/10000000000005BB0000014E06FF13F7.png" style="width:15.42cm;height:3.51cm;" alt="Image" /></p>
+<ul>
+<li>En [1-3], nous configurons l’interpréteur Python du projet ;</li>
+<li>En [4], le chemin de l’interpréteur ;</li>
+<li>En [5], les packages (plugins) associés à cet interpréteur ;
+En [4], découvrons le chemin complet de l’interpréteur utilisé :</li>
+</ul>
+<p><img src="images/100000000000043900000135000327CB.png" style="width:11.471cm;height:3.281cm;" alt="Image" /></p>
+<p><img src="images/100000000000049C000000CACC2BB23E.png" style="width:12.561cm;height:2.15cm;" alt="Image" /></p>
+<ul>
+<li>En [3], on découvre que l’interpréteur Python utilisé se trouve dans le dossier de l’environnement virtuel du projet [.venv] ;
+Il est possible de changer d’interpréteur Python, ce qui peut changer les plugins disponibles au projet :</li>
+</ul>
+<p><img src="images/10000000000005BC00000132A5AE6115.png" style="width:18cm;height:3.75cm;" alt="Image" /></p>
+<ul>
+<li>En [4], ajoutez un interpréteur Python ;</li>
+</ul>
+<p><img src="images/1000000000000148000000870B78F0AD.png" style="width:3.47cm;height:1.431cm;" alt="Image" /></p>
+<ul>
+<li>En [5], ajoutez un interpréteur local. PyCharm va alors explorer le PATH de la machine à la recherche d’un binaire [python.exe] ;</li>
+</ul>
+<p><img src="images/1000000000000303000000FE56F037D4.png" style="width:8.17cm;height:2.69cm;" alt="Image" /></p>
+<ul>
+<li>En [1], indiquez que le nouvel interpréteur doit utiliser l’environnement virtuel [.venv] existant du projet ;</li>
+<li>En [2], l’IDE propose comme interpréteur l’application Python installée dans une étape précédente ;</li>
+<li>Validez ce choix ;</li>
+</ul>
+<p><img src="images/100000000000051B0000027361660D7E.png" style="width:13.839cm;height:6.639cm;" alt="Image" /></p>
+<ul>
+<li>En [4], le nouvel interpréteur ;</li>
+<li>En [5], les packages auxquels aura accès le projet. C’est la principale différence amenée par le changement d’interpréteur. Si vous gérez plusieurs projets qui utilisent différents packages il est préférable d’utiliser les packages de l’environnement virtuel de chaque projet. Ainsi vous avez le contrôle des versions des plugins que vous utilisez. Pour cette raison, nous garderons l’interpréteur de l’environnement virtuel :</li>
+</ul>
+<p><img src="images/100000000000051D000001E8FB1FFC91.png" style="width:13.839cm;height:5.159cm;" alt="Image" /></p>
+<p><img src="images/10000000000005B90000017F1BC0AD9B.png" style="width:15.409cm;height:4.03cm;" alt="Image" /></p>
+<p>Allons un peu plus loin dans la configuration :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001720000021C50F81060.png" style="display:inline-block; margin:4px;width:3.919cm;height:5.72cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000583000001F282BF5AE3.png" style="display:inline-block; margin:4px;width:14.99cm;height:5.29cm;" /></td></tr></table>
+
+<ul>
+<li>En [1-2], entrez dans le mode configuration de l’IDE ;</li>
+<li>En [3-4], configurez des options du système ;</li>
+<li>En [5], pas de confirmation avant de quitter l’IDE ;</li>
+<li>En [6], lorsqu’on quitte l’IDE et qu’il y a un processus en cours d’exécution lancé par le code exécuté, on arrête celui-ci ;</li>
+<li>En [7], lorsque l’IDE est lancée, on ne rouvre pas automatiquement le dernier projet utilisé. On laisse l’utilisateur choisir son projet ;</li>
+<li>En [8], lorsque l’utilisateur gère plusieurs projets en même temps, chaque projet a sa fenêtre personnelle ;</li>
+<li>En [9], on a désigné le dossier par défaut de notre projet ;
+Maintenant nous pouvons commencer à coder. Commençons par créer un dossier dans lequel nous mettrons notre premier script Python :</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041D0000017D721E4B11.png" style="display:inline-block; margin:4px;width:11.141cm;height:4.03cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021A000000A4CC322650.png" style="display:inline-block; margin:4px;width:5.71cm;height:1.739cm;" /></td></tr></table>
+
+<ul>
+<li>Cliquer droit sur le projet, puis <strong>[1-3]</strong> pour créer un dossier ;</li>
+<li>En <strong>[4]</strong>, tapez le nom du dossier : il sera créé dans le dossier du projet ;</li>
+</ul>
+<p><img src="images/10000000000001F50000022825B3B21E.png" style="width:5.3cm;height:5.84cm;" alt="Image" /></p>
+<p>Puis créons un script Python :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003C20000020B9CC8B66E.png" style="display:inline-block; margin:4px;width:10.19cm;height:5.54cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000022C0000010D901EEBA8.png" style="display:inline-block; margin:4px;width:5.89cm;height:2.85cm;" /></td></tr></table>
+
+<p>Cliquer droit sur le dossier <strong>[bases]</strong>, puis <strong>[1-4]</strong> :</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002FB000000FD5563B7FC.png" style="display:inline-block; margin:4px;width:8.08cm;height:2.679cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003750000025F6C95FB64.png" style="display:inline-block; margin:4px;width:9.359cm;height:6.421cm;" /></td></tr></table>
+
+<ul>
+<li>Rappelons-nous ici que nous avons inclus le gestionnaire de versions Git à notre projet. Cela s’est fait lors de la création du projet où nous avons coché l’option Git. Git peut prendre des photos du projet à différentes étapes de celui-ci. Ici en [1-3], l’IDE nous demande si nous voulons inclure le fichier [bases.py] que nous sommes en train de créer dans la photo. Nous répondons oui [3]. Par ailleurs nous cochons [2] pour que cela soit fait systématiquement à la création d’un fichier. Nous reviendrons brièvement sur Git un peu plus loin ;</li>
+<li>En [4-5], le script [bases_01] a été créé et est prêt à être édité ;
+Écrivons notre premier script :</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000261000000CCCCD847A9.png" style="display:inline-block; margin:4px;width:6.451cm;height:2.161cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002B1000002F78DEFD05E.png" style="display:inline-block; margin:4px;width:7.29cm;height:8.029cm;" /></td></tr></table>
+
+<ul>
+<li>Lignes 1, 3 : les commentaires commencent avec le signe # ;</li>
+<li>Ligne 2 : initialisation d&#x27;une variable. Python ne déclare pas le type de ses variables ;</li>
+<li>Ligne 4 : affichage écran. La syntaxe utilisée ici est <strong>[</strong><strong>format % données</strong><strong>]</strong> avec :</li>
+<li><strong>format</strong> : nom=%s où %s désigne l&#x27;emplacement d&#x27;une chaîne de caractères. Celle-ci sera trouvée dans la partie <strong>[données]</strong> de l&#x27;expression ;</li>
+<li><strong>données</strong> : la valeur de la variable <strong>[nom]</strong> viendra remplacer le format %s dans la chaîne de format ;</li>
+<li>Avec <strong>[1-2]</strong>, on reformate le code selon les recommandations de l&#x27;organisme gérant Python. On peut aussi taper au clavier la séquence Ctrl-Alt-L ;
+Sur la copie d’écran on voit que certains textes sont soulignés. PyCharm signale des erreurs d’orthographe dans les commentaires et chaînes de caractères. Il les appelle des <strong>typos</strong>. Il est par défaut configuré pour des textes en anglais. Pour éviter le signalement des typos en français, procédons comme suit :</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000243000002049B2BB9E8.png" style="display:inline-block; margin:4px;width:6.13cm;height:5.459cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003940000031B8E28874D.png" style="display:inline-block; margin:4px;width:9.691cm;height:8.41cm;" /></td></tr></table>
+
+<ul>
+<li>En [1-2], configurons l’IDE ;</li>
+<li>En [3-6], désactivons l’option [Proofreading] de l’éditeur ;</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000248000000E8F61B6BEF.png" style="display:inline-block; margin:4px;width:6.189cm;height:2.461cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003800000010A363A8BAB.png" style="display:inline-block; margin:4px;width:9.5cm;height:2.82cm;" /></td></tr></table>
+
+<p>En [7], le signalement des typos a disparu. Le script est exécuté avec un clic sur l’icône [8] de la barre d’outils principale. Le résultat est le suivant :</p>
+<p><img src="images/100000000000071E0000013BCAEF9188.png" style="width:17.999cm;height:3.112cm;" alt="Image" /></p>
+<ul>
+<li>En [1-2], une fenêtre de résultats s’est ouverte ;</li>
+<li>En [3], on voit que le code de [bases_01.py] a été exécuté par l’interpréteur Python de l’environnement virtuel du projet ;</li>
+<li>En [4], le résultat de l’exécution ;
+Pour exécuter les scripts de ce document, téléchargez le code à l&#x27;URL |<a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9mNTNhOTE5ZjQzZDI3ZWI1L0VpNzRCOGJkaDNoSXR6MktmZHVTSTJ3QnYwVGtMaklnVkRjOENfX01SWHk3M2c%5FZT1UdHU5eFM&amp;id=F53A919F43D27EB5%21sc607f82e87dd4878b73d8a7ddb92236c&amp;cid=F53A919F43D27EB5"><u><u>Générer un script Python avec des outils d&#x27;IA</u></u></a>| (cloud OneDrive) puis dans PyCharm procédez comme suit :</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000131000001C7FB4D5D86.png" style="display:inline-block; margin:4px;width:3.769cm;height:5.62cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+<li>En [1-2], fermez le projet sur lequel vous êtes en train de travailler ;</li>
+</ul>
+<p><img src="images/100000000000077C000001991265138A.png" style="width:17.999cm;height:3.842cm;" alt="Image" /></p>
+<ul>
+<li>En [1], on choisit l’option [Projects] ;</li>
+<li>Dans la fenêtre [2], on a la liste des derniers projets sur lesquels on a travaillé ;</li>
+<li>En [3], on indique qu’on veut ouvrir un projet existant ;</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002F50000029F80EEE621.png" style="display:inline-block; margin:4px;width:6.01cm;height:5.33cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+<li>En [1], on ouvre le dossier qu’on a téléchargé ;</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F500000491445627B1.png" style="display:inline-block; margin:4px;width:10.111cm;height:9.31cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+<li>En [1-2], le projet PyCharm ; 
+Configurons ce projet pour qu’il ait un environnement virtuel d’exécution :</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001D6000002A0FC82F3CC.png" style="display:inline-block; margin:4px;width:3.731cm;height:5.33cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+<li>En [1-2], on configure le nouveau projet ;</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000007B20000026FB0FBB9CC.png" style="display:inline-block; margin:4px;width:16.002cm;height:5.061cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+<li>En [3-4], on configure un interpréteur pour le projet ;</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004EA00000275CE19B89D.png" style="display:inline-block; margin:4px;width:9.999cm;height:5.001cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+<li>En [5-6], on choisit un environnement virtuel d’exécution ;</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000752000001C6E08AB521.png" style="display:inline-block; margin:4px;width:14.78cm;height:3.581cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+<ul>
+<li>En [7], le nouvel interpréteur Python utilisé pour le projet ;
+Ceci fait, vous pouvez exécuter les scripts du projet :</li>
+</ul>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003330000031A128698EE.png" style="display:inline-block; margin:4px;width:6.5cm;height:6.301cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner">
+
+      <div>
+        <a href="https://tahe.developpez.com" target="_blank">
+          https://tahe.developpez.com
+        </a>
+        <br>
+        Ce cours tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
+        <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
+        Partage dans les Mêmes Conditions 3.0 non transposé</em>.
+      </div>
+
+    </div>
+  </div>
+
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+        <script src="javascripts/focus.js"></script>
+      
+    
+  </body>
+</html>
