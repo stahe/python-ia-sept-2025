@@ -6,13 +6,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Tutoriel complet pour générer du code Python.">
+        <meta name="description" content="Introduction au langage Python 3 et au framework web Flask par l'exemple">
       
       
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/python-ia-sept-2025/resolution-des-trois-problemes-avec-chatgpt.html">
+        <link rel="canonical" href="https://stahe.github.io/python-flask-sept-2020/resolution-des-trois-problemes-avec-chatgpt.html">
       
       
         <link rel="prev" href="resolution-des-trois-problemes-avec-google-gemini.html">
@@ -29,7 +29,7 @@
     
     
       
-        <title>5. Résolution des trois problèmes avec ChatGPT - Générer un script Python avec des outils d’IA</title>
+        <title>5. Résolution des trois problèmes avec ChatGPT - Introduction au langage Python 3 et au framework web Flask par l'exemple</title>
       
     
     
@@ -60,6 +60,20 @@
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBZC3JVJNR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    // CORRECTION ICI : Utilisation de guillemets doubles pour entourer le titre qui contient une apostrophe
+    var siteName = "Introduction au langage Python 3 et au framework web Flask par l'exemple";
+
+    gtag('config', 'G-EBZC3JVJNR', {
+        'page_title': siteName
+    });
+    console.log("[GA Debug] page_title forced to: " + siteName);
+  </script>
 
     
     
@@ -98,7 +112,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="Générer un script Python avec des outils d’IA" class="md-header__button md-logo" aria-label="Générer un script Python avec des outils d’IA" data-md-component="logo">
+    <a href="index.html" title="Introduction au langage Python 3 et au framework web Flask par l&#39;exemple" class="md-header__button md-logo" aria-label="Introduction au langage Python 3 et au framework web Flask par l'exemple" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +126,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Générer un script Python avec des outils d’IA
+            Introduction au langage Python 3 et au framework web Flask par l'exemple
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -198,7 +212,7 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/stahe/python-ia-sept-2025" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/stahe/python-flask-sept-2020" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -236,17 +250,17 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Générer un script Python avec des outils d’IA" class="md-nav__button md-logo" aria-label="Générer un script Python avec des outils d’IA" data-md-component="logo">
+    <a href="index.html" title="Introduction au langage Python 3 et au framework web Flask par l&#39;exemple" class="md-nav__button md-logo" aria-label="Introduction au langage Python 3 et au framework web Flask par l'exemple" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    Générer un script Python avec des outils d’IA
+    Introduction au langage Python 3 et au framework web Flask par l'exemple
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/stahe/python-ia-sept-2025" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/stahe/python-flask-sept-2020" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
@@ -347,14 +361,14 @@
   
   
     <li class="md-nav__item">
-      <a href="installation-dun-environnement-de-travail.html" class="md-nav__link">
+      <a href="installation-dx27un-environnement-de-travail.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    3. Installation d'un environnement de travail
+    3. Installation d&#x27;un environnement de travail
   
 
     
@@ -746,9 +760,9 @@
 <ul>
 <li>En [1-3], les trois problèmes posés à ChatGPT ;</li>
 <li>En [4], l’URL de ChatGPT ;</li>
-<li>En [5], la version de ChatGPT utilisée ;</li>
+<li>En [5], la version de ChatGPT utilisée ;
+ChatGPT est un produit de OpenAI disponible à l’URL [https://chatgpt.com/]. Pour avoir un historique de vos sessions de questions / réponses comme ci-dessus, il vous faut créer un compte. Par ailleurs, comme toutes les autres IA testées, ChatGPT limite le nombre de vos questions et le nombre de fichiers téléchargés. Quand cette limite est atteinte, la session est terminée et on vous propose de la continuer plus tard dans le temps. Les limites imposées par ChatGPT sont atteintes très rapidement. Pour faire ce tutoriel, j’ai du prendre un abonnement payant d’un mois.</li>
 </ul>
-<p>ChatGPT est un produit de OpenAI disponible à l’URL [https://chatgpt.com/]. Pour avoir un historique de vos sessions de questions / réponses comme ci-dessus, il vous faut créer un compte. Par ailleurs, comme toutes les autres IA testées, ChatGPT limite le nombre de vos questions et le nombre de fichiers téléchargés. Quand cette limite est atteinte, la session est terminée et on vous propose de la continuer plus tard dans le temps. Les limites imposées par ChatGPT sont atteintes très rapidement. Pour faire ce tutoriel, j’ai du prendre un abonnement payant d’un mois.</p>
 <p>L’interface de ChatGPT est la suivante :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000006860000017DDA2B4B71.png" style="display:inline-block; margin:4px;width:13.33cm;height:3.039cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -768,10 +782,10 @@
 
 <ul>
 <li>En [1], on a donné le PDF généré par Gemini ;</li>
-<li>En [2], on a ajouté le test unitaire par lequel Gemini a démontré sa supériorité :</li>
+<li>En [2], on a ajouté le test unitaire par lequel Gemini a démontré sa supériorité :
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="n">test12</span> <span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">49500</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="mi">1297</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">324</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div></li>
 </ul>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>test12 : (2, 2, 49500) -&gt; (1297, 431, 324)
-</code></pre></div></td></tr></table></div>
 <p>On lance ChatGPT. Il met environ 3 minutes pour générer sa réponse. Contrairement à Gemini, il livre bien un lien qui marche pour récupérer le script généré. On charge celui-ci dans PyCharm :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000020A000002E4706FDC95.png" style="display:inline-block; margin:4px;width:4.14cm;height:5.87cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
@@ -1396,7 +1410,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000065000000145A1B85B27.png" style="display:inline-block; margin:4px;width:12.779cm;height:2.57cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001950000012FABD91014.png" style="display:inline-block; margin:4px;width:3.221cm;height:2.409cm;" /></td></tr></table>
 
 <p>Comme les fois précédentes, il génère un script Python qui marche du premier coup. On avait ajouté dans les instructions un test supplémentaire :</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a>test13 : (1, 0, 18535) -&gt; (359, 491, 90)
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="n">test13</span> <span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">18535</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="mi">359</span><span class="p">,</span> <span class="mi">491</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>Les 13 tests ont été passés avec succès.</p>
 <h2 id="56-retour-sur-gemini">5.6. Retour sur Gemini</h2>
@@ -1421,7 +1435,7 @@
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003FA000001B7B872A20E.png" style="display:inline-block; margin:4px;width:8.07cm;height:3.48cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>La question complète est la suivante :</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a>Après tout ce qu&#39;on a fait, compare les deux approches, la tienne et celle de ChatGPT dans les pDF que je te joins [.. selon Gemini] pour toi, [.. selon ChatGPT] pour ChatGPT. Dis-moi laquelle on doit préférer vu que sur les 13 tests générés tu les réussis tous avec l&#39;un ou avec l&#39;autre PDF.
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="n">Après</span> <span class="n">tout</span> <span class="n">ce</span> <span class="n">qu</span><span class="s1">&#39;on a fait, compare les deux approches, la tienne et celle de ChatGPT dans les pDF que je te joins [.. selon Gemini] pour toi, [.. selon ChatGPT] pour ChatGPT. Dis-moi laquelle on doit préférer vu que sur les 13 tests générés tu les réussis tous avec l&#39;</span><span class="n">un</span> <span class="n">ou</span> <span class="n">avec</span> <span class="n">l</span><span class="s1">&#39;autre PDF.</span>
 </code></pre></div></td></tr></table></div>
 <p>La réponse de Gemini est catégorique :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000594000001F53B5B49AD.png" style="display:inline-block; margin:4px;width:11.291cm;height:3.96cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
@@ -1478,31 +1492,31 @@
 <span class="normal"><a href="#__codelineno-4-22">22</a></span>
 <span class="normal"><a href="#__codelineno-4-23">23</a></span>
 <span class="normal"><a href="#__codelineno-4-24">24</a></span>
-<span class="normal"><a href="#__codelineno-4-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>C:\Data\st-2025\dev\python\code\python-flask-2025-cours\.venv\Scripts\python.exe &quot;C:/Program Files/JetBrains/PyCharm 2025.2.1.1/plugins/python-ce/helpers/pycharm/_jb_unittest_runner.py&quot; --path &quot;C:\Data\st-2025\dev\python\code\python-flask-2025-cours\outils ia\gemini\gemini4.py&quot; 
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a>Testing started at 17:45 ...
-<a id="__codelineno-4-3" name="__codelineno-4-3"></a>Launching unittests with arguments python -m unittest C:\Data\st-2025\dev\python\code\python-flask-2025-cours\outils ia\gemini\gemini4.py in C:\Data\st-2025\dev\python\code\python-flask-2025-cours
+<span class="normal"><a href="#__codelineno-4-25">25</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="n">C</span><span class="p">:</span>\<span class="n">Data</span>\<span class="n">st</span><span class="o">-</span><span class="mi">2025</span>\<span class="n">dev</span>\<span class="n">python</span>\<span class="n">code</span>\<span class="n">python</span><span class="o">-</span><span class="n">flask</span><span class="o">-</span><span class="mi">2025</span><span class="o">-</span><span class="n">cours</span>\<span class="o">.</span><span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">python</span><span class="o">.</span><span class="n">exe</span> <span class="s2">&quot;C:/Program Files/JetBrains/PyCharm 2025.2.1.1/plugins/python-ce/helpers/pycharm/_jb_unittest_runner.py&quot;</span> <span class="o">--</span><span class="n">path</span> <span class="s2">&quot;C:\Data\st-2025\dev\python\code\python-flask-2025-cours\outils ia\gemini\gemini4.py&quot;</span> 
+<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="n">Testing</span> <span class="n">started</span> <span class="n">at</span> <span class="mi">17</span><span class="p">:</span><span class="mi">45</span> <span class="o">...</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="n">Launching</span> <span class="n">unittests</span> <span class="k">with</span> <span class="n">arguments</span> <span class="n">python</span> <span class="o">-</span><span class="n">m</span> <span class="n">unittest</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Data</span>\<span class="n">st</span><span class="o">-</span><span class="mi">2025</span>\<span class="n">dev</span>\<span class="n">python</span>\<span class="n">code</span>\<span class="n">python</span><span class="o">-</span><span class="n">flask</span><span class="o">-</span><span class="mi">2025</span><span class="o">-</span><span class="n">cours</span>\<span class="n">outils</span> <span class="n">ia</span>\<span class="n">gemini</span>\<span class="n">gemini4</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="n">C</span><span class="p">:</span>\<span class="n">Data</span>\<span class="n">st</span><span class="o">-</span><span class="mi">2025</span>\<span class="n">dev</span>\<span class="n">python</span>\<span class="n">code</span>\<span class="n">python</span><span class="o">-</span><span class="n">flask</span><span class="o">-</span><span class="mi">2025</span><span class="o">-</span><span class="n">cours</span>
 <a id="__codelineno-4-4" name="__codelineno-4-4"></a>
-<a id="__codelineno-4-5" name="__codelineno-4-5"></a>SubTest failure: Traceback (most recent call last):
-<a id="__codelineno-4-6" name="__codelineno-4-6"></a>  File &quot;C:\Program Files\Python313\Lib\unittest\case.py&quot;, line 58, in testPartExecutor
-<a id="__codelineno-4-7" name="__codelineno-4-7"></a>    yield
-<a id="__codelineno-4-8" name="__codelineno-4-8"></a>  File &quot;C:\Program Files\Python313\Lib\unittest\case.py&quot;, line 556, in subTest
-<a id="__codelineno-4-9" name="__codelineno-4-9"></a>    yield
-<a id="__codelineno-4-10" name="__codelineno-4-10"></a>  File &quot;C:\Data\st-2025\dev\python\code\python-flask-2025-cours\outils ia\gemini\gemini4.py&quot;, line 234, in test_cas_verifies_simulateur_officiel
-<a id="__codelineno-4-11" name="__codelineno-4-11"></a>    self.assertAlmostEqual(calcul_impot, attendu_impot, delta=1, msg=&quot;Échec sur le montant de l&#39;impôt&quot;)
-<a id="__codelineno-4-12" name="__codelineno-4-12"></a>    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-<a id="__codelineno-4-13" name="__codelineno-4-13"></a>AssertionError: 2669 != 2270 within 1 delta (399 difference) : Échec sur le montant de l&#39;impôt
+<a id="__codelineno-4-5" name="__codelineno-4-5"></a><span class="n">SubTest</span> <span class="n">failure</span><span class="p">:</span> <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">):</span>
+<a id="__codelineno-4-6" name="__codelineno-4-6"></a>  <span class="n">File</span> <span class="s2">&quot;C:\Program Files\Python313\Lib\unittest\case.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">58</span><span class="p">,</span> <span class="ow">in</span> <span class="n">testPartExecutor</span>
+<a id="__codelineno-4-7" name="__codelineno-4-7"></a>    <span class="k">yield</span>
+<a id="__codelineno-4-8" name="__codelineno-4-8"></a>  <span class="n">File</span> <span class="s2">&quot;C:\Program Files\Python313\Lib\unittest\case.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">556</span><span class="p">,</span> <span class="ow">in</span> <span class="n">subTest</span>
+<a id="__codelineno-4-9" name="__codelineno-4-9"></a>    <span class="k">yield</span>
+<a id="__codelineno-4-10" name="__codelineno-4-10"></a>  <span class="n">File</span> <span class="s2">&quot;C:\Data\st-2025\dev\python\code\python-flask-2025-cours\outils ia\gemini\gemini4.py&quot;</span><span class="p">,</span> <span class="n">line</span> <span class="mi">234</span><span class="p">,</span> <span class="ow">in</span> <span class="n">test_cas_verifies_simulateur_officiel</span>
+<a id="__codelineno-4-11" name="__codelineno-4-11"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">assertAlmostEqual</span><span class="p">(</span><span class="n">calcul_impot</span><span class="p">,</span> <span class="n">attendu_impot</span><span class="p">,</span> <span class="n">delta</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s2">&quot;Échec sur le montant de l&#39;impôt&quot;</span><span class="p">)</span>
+<a id="__codelineno-4-12" name="__codelineno-4-12"></a>    <span class="o">~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</span>
+<a id="__codelineno-4-13" name="__codelineno-4-13"></a><span class="ne">AssertionError</span><span class="p">:</span> <span class="mi">2669</span> <span class="o">!=</span> <span class="mi">2270</span> <span class="n">within</span> <span class="mi">1</span> <span class="n">delta</span> <span class="p">(</span><span class="mi">399</span> <span class="n">difference</span><span class="p">)</span> <span class="p">:</span> <span class="n">Échec</span> <span class="n">sur</span> <span class="n">le</span> <span class="n">montant</span> <span class="n">de</span> <span class="n">l</span><span class="s1">&#39;impôt</span>
 <a id="__codelineno-4-14" name="__codelineno-4-14"></a>
 <a id="__codelineno-4-15" name="__codelineno-4-15"></a>
 <a id="__codelineno-4-16" name="__codelineno-4-16"></a>
 <a id="__codelineno-4-17" name="__codelineno-4-17"></a>
-<a id="__codelineno-4-18" name="__codelineno-4-18"></a>Ran 1 test in 0.010s
+<a id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="n">Ran</span> <span class="mi">1</span> <span class="n">test</span> <span class="ow">in</span> <span class="mf">0.010</span><span class="n">s</span>
 <a id="__codelineno-4-19" name="__codelineno-4-19"></a>
-<a id="__codelineno-4-20" name="__codelineno-4-20"></a>FAILED (failures=1)
+<a id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="n">FAILED</span> <span class="p">(</span><span class="n">failures</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 <a id="__codelineno-4-21" name="__codelineno-4-21"></a>
-<a id="__codelineno-4-22" name="__codelineno-4-22"></a>One or more subtests failed
-<a id="__codelineno-4-23" name="__codelineno-4-23"></a>Failed subtests list: [Test &#39;test12&#39; avec entrée (2, 0, 43333)]
+<a id="__codelineno-4-22" name="__codelineno-4-22"></a><span class="n">One</span> <span class="ow">or</span> <span class="n">more</span> <span class="n">subtests</span> <span class="n">failed</span>
+<a id="__codelineno-4-23" name="__codelineno-4-23"></a><span class="n">Failed</span> <span class="n">subtests</span> <span class="nb">list</span><span class="p">:</span> <span class="p">[</span><span class="n">Test</span> <span class="s1">&#39;test12&#39;</span> <span class="n">avec</span> <span class="n">entrée</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">43333</span><span class="p">)]</span>
 <a id="__codelineno-4-24" name="__codelineno-4-24"></a>
-<a id="__codelineno-4-25" name="__codelineno-4-25"></a>Process finished with exit code 1
+<a id="__codelineno-4-25" name="__codelineno-4-25"></a><span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">code</span> <span class="mi">1</span>
 </code></pre></div></td></tr></table></div>
 <p>Donc Gemini échoue au test rajouté par ChatGPT.</p>
 <p>L’exécution de [chatGPT4] donne les résultats suivants :</p>
@@ -1525,26 +1539,26 @@
 <span class="normal"><a href="#__codelineno-5-17">17</a></span>
 <span class="normal"><a href="#__codelineno-5-18">18</a></span>
 <span class="normal"><a href="#__codelineno-5-19">19</a></span>
-<span class="normal"><a href="#__codelineno-5-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>C:\Data\st-2025\dev\python\code\python-flask-2025-cours\.venv\Scripts\python.exe &quot;C:\Data\st-2025\dev\python\code\python-flask-2025-cours\outils ia\chatGPT\chatGPT4.py&quot; 
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>Test (2, 2, 55555) -&gt; obtenu (impôt=2814, décote=0, réduction=0) | attendu (2815, 0, 0) | OK
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a>Test (2, 2, 50000) -&gt; obtenu (impôt=1384, décote=384, réduction=347) | attendu (1385, 384, 346) | OK
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a>Test (2, 3, 50000) -&gt; obtenu (impôt=0, décote=721, réduction=0) | attendu (0, 720, 0) | OK
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a>Test (1, 2, 100000) -&gt; obtenu (impôt=19884, décote=0, réduction=0) | attendu (19884, 0, 0) | OK
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a>Test (1, 3, 100000) -&gt; obtenu (impôt=16782, décote=0, réduction=0) | attendu (16782, 0, 0) | OK
-<a id="__codelineno-5-7" name="__codelineno-5-7"></a>Test (2, 3, 100000) -&gt; obtenu (impôt=9200, décote=0, réduction=0) | attendu (9200, 0, 0) | OK
-<a id="__codelineno-5-8" name="__codelineno-5-8"></a>Test (2, 5, 100000) -&gt; obtenu (impôt=4230, décote=0, réduction=0) | attendu (4230, 0, 0) | OK
-<a id="__codelineno-5-9" name="__codelineno-5-9"></a>Test (1, 0, 100000) -&gt; obtenu (impôt=22986, décote=0, réduction=0) | attendu (22986, 0, 0) | OK
-<a id="__codelineno-5-10" name="__codelineno-5-10"></a>Test (2, 2, 30000) -&gt; obtenu (impôt=0, décote=0, réduction=0) | attendu (0, 0, 0) | OK
-<a id="__codelineno-5-11" name="__codelineno-5-11"></a>Test (1, 0, 200000) -&gt; obtenu (impôt=64210, décote=0, réduction=0) | attendu (64211, 0, 0) | OK
-<a id="__codelineno-5-12" name="__codelineno-5-12"></a>Test (2, 3, 200000) -&gt; obtenu (impôt=42842, décote=0, réduction=0) | attendu (42843, 0, 0) | OK
-<a id="__codelineno-5-13" name="__codelineno-5-13"></a>Test (2, 2, 49500) -&gt; obtenu (impôt=1296, décote=431, réduction=325) | attendu (1297, 431, 324) | OK
-<a id="__codelineno-5-14" name="__codelineno-5-14"></a>Test (1, 0, 18535) -&gt; obtenu (impôt=359, décote=491, réduction=90) | attendu (359, 491, 90) | OK
-<a id="__codelineno-5-15" name="__codelineno-5-15"></a>Test (2, 0, 43333) -&gt; obtenu (impôt=2268, décote=0, réduction=401) | attendu (2270, 0, 400) | ECHEC
-<a id="__codelineno-5-16" name="__codelineno-5-16"></a> Détails tolérance ±1€ : impôt ok? False, décote ok? True, réduction ok? True
+<span class="normal"><a href="#__codelineno-5-20">20</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="n">C</span><span class="p">:</span>\<span class="n">Data</span>\<span class="n">st</span><span class="o">-</span><span class="mi">2025</span>\<span class="n">dev</span>\<span class="n">python</span>\<span class="n">code</span>\<span class="n">python</span><span class="o">-</span><span class="n">flask</span><span class="o">-</span><span class="mi">2025</span><span class="o">-</span><span class="n">cours</span>\<span class="o">.</span><span class="n">venv</span>\<span class="n">Scripts</span>\<span class="n">python</span><span class="o">.</span><span class="n">exe</span> <span class="s2">&quot;C:\Data\st-2025\dev\python\code\python-flask-2025-cours\outils ia\chatGPT\chatGPT4.py&quot;</span> 
+<a id="__codelineno-5-2" name="__codelineno-5-2"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">55555</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">2814</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">2815</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">50000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">1384</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">384</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">347</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">1385</span><span class="p">,</span> <span class="mi">384</span><span class="p">,</span> <span class="mi">346</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">50000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">721</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">720</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">19884</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">19884</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">16782</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">16782</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-7" name="__codelineno-5-7"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">9200</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">9200</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">4230</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">4230</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-9" name="__codelineno-5-9"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">22986</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">22986</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-10" name="__codelineno-5-10"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">30000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-11" name="__codelineno-5-11"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">64210</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">64211</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-12" name="__codelineno-5-12"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">200000</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">42842</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">42843</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-13" name="__codelineno-5-13"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">49500</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">1296</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">431</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">325</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">1297</span><span class="p">,</span> <span class="mi">431</span><span class="p">,</span> <span class="mi">324</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-14" name="__codelineno-5-14"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">18535</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">359</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">491</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">90</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">359</span><span class="p">,</span> <span class="mi">491</span><span class="p">,</span> <span class="mi">90</span><span class="p">)</span> <span class="o">|</span> <span class="n">OK</span>
+<a id="__codelineno-5-15" name="__codelineno-5-15"></a><span class="n">Test</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">43333</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">obtenu</span> <span class="p">(</span><span class="n">impôt</span><span class="o">=</span><span class="mi">2268</span><span class="p">,</span> <span class="n">décote</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">réduction</span><span class="o">=</span><span class="mi">401</span><span class="p">)</span> <span class="o">|</span> <span class="n">attendu</span> <span class="p">(</span><span class="mi">2270</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">400</span><span class="p">)</span> <span class="o">|</span> <span class="n">ECHEC</span>
+<a id="__codelineno-5-16" name="__codelineno-5-16"></a> <span class="n">Détails</span> <span class="n">tolérance</span> <span class="err">±</span><span class="mi">1</span><span class="err">€</span> <span class="p">:</span> <span class="n">impôt</span> <span class="n">ok</span><span class="err">?</span> <span class="kc">False</span><span class="p">,</span> <span class="n">décote</span> <span class="n">ok</span><span class="err">?</span> <span class="kc">True</span><span class="p">,</span> <span class="n">réduction</span> <span class="n">ok</span><span class="err">?</span> <span class="kc">True</span>
 <a id="__codelineno-5-17" name="__codelineno-5-17"></a>
-<a id="__codelineno-5-18" name="__codelineno-5-18"></a>Résultat global : AU MOINS UN TEST ÉCHOUE ❌
+<a id="__codelineno-5-18" name="__codelineno-5-18"></a><span class="n">Résultat</span> <span class="k">global</span> <span class="p">:</span> <span class="n">AU</span> <span class="n">MOINS</span> <span class="n">UN</span> <span class="n">TEST</span> <span class="n">ÉCHOUE</span> <span class="err">❌</span>
 <a id="__codelineno-5-19" name="__codelineno-5-19"></a>
-<a id="__codelineno-5-20" name="__codelineno-5-20"></a>Process finished with exit code 0
+<a id="__codelineno-5-20" name="__codelineno-5-20"></a><span class="n">Process</span> <span class="n">finished</span> <span class="k">with</span> <span class="n">exit</span> <span class="n">code</span> <span class="mi">0</span>
 </code></pre></div></td></tr></table></div>
 <p>ChatGPT échoue lui aussi sur le test rajouté mais pas pour les mêmes raisons que Gemini. ChatGPT a trouvé les bons résultats mais à 2 euros près au lieu des 1 euro imposés.</p>
 <p>Donc désormais c’est le PDF généré par ChatGPT que nous utiliserons avec les IA suivantes. Il faut noter que c’est à cause du manque de tests unitaires proposés dans mes instructions que les deux IA ont toutes deux réussi les premiers tests. D’où dans cet exemple précis, l’importance de mettre des tests unitaires pour les cas limites du calcul de l’impôt. Comme c’est plutôt difficile d’imaginer soi-même ces tests. On va demander aux IA d’en rajouter eux-mêmes.</p>
@@ -1665,9 +1679,9 @@
 </code></pre></div></td></tr></table></div>
 <ul>
 <li>Lignes 11-24, les 14 tests imposés ;</li>
-<li>Lignes 5-55 : ce code vient du script généré par ChatGPT. On va imposer à Gemini d’utiliser ce code pour faciliter les comparaisons entre les deux scripts générés.</li>
+<li>Lignes 5-55 : ce code vient du script généré par ChatGPT. On va imposer à Gemini d’utiliser ce code pour faciliter les comparaisons entre les deux scripts générés.
+On commence par ChatGPT :</li>
 </ul>
-<p>On commence par ChatGPT :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000670000001C32DE2F563.png" style="display:inline-block; margin:4px;width:13.16cm;height:3.6cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <p>Sa première réponse est incorrecte. Je le lui dis en lui donnant les logs de l’exécution :</p>
@@ -1694,27 +1708,27 @@
 <span class="normal"><a href="#__codelineno-7-18">18</a></span>
 <span class="normal"><a href="#__codelineno-7-19">19</a></span>
 <span class="normal"><a href="#__codelineno-7-20">20</a></span>
-<span class="normal"><a href="#__codelineno-7-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a># Cas limites supplémentaires (bords de paliers/arrondis)
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>TESTS += [
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>    # Abattement 10 % : plancher et plafond
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a>    ((1, 0, 3000), (0, 0, 0)),  # 10 % = 300 &lt; plancher 437 =&gt; RNI faible -&gt; impôt nul
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    ((1, 0, 200000), (64211, 0, 0)),  # plafond abattement déjà couvert dans tests initiaux
+<span class="normal"><a href="#__codelineno-7-21">21</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1"># Cas limites supplémentaires (bords de paliers/arrondis)</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="n">TESTS</span> <span class="o">+=</span> <span class="p">[</span>
+<a id="__codelineno-7-3" name="__codelineno-7-3"></a>    <span class="c1"># Abattement 10 % : plancher et plafond</span>
+<a id="__codelineno-7-4" name="__codelineno-7-4"></a>    <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">3000</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span>  <span class="c1"># 10 % = 300 &lt; plancher 437 =&gt; RNI faible -&gt; impôt nul</span>
+<a id="__codelineno-7-5" name="__codelineno-7-5"></a>    <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">200000</span><span class="p">),</span> <span class="p">(</span><span class="mi">64211</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span>  <span class="c1"># plafond abattement déjà couvert dans tests initiaux</span>
 <a id="__codelineno-7-6" name="__codelineno-7-6"></a>
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a>    # Décote : juste en dessous / au-dessus des seuils
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a>    ((1, 0, 25000), None),  # diagnostique
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a>    ((2, 0, 35000), None),  # diagnostique
+<a id="__codelineno-7-7" name="__codelineno-7-7"></a>    <span class="c1"># Décote : juste en dessous / au-dessus des seuils</span>
+<a id="__codelineno-7-8" name="__codelineno-7-8"></a>    <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">25000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>  <span class="c1"># diagnostique</span>
+<a id="__codelineno-7-9" name="__codelineno-7-9"></a>    <span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">35000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>  <span class="c1"># diagnostique</span>
 <a id="__codelineno-7-10" name="__codelineno-7-10"></a>
-<a id="__codelineno-7-11" name="__codelineno-7-11"></a>    # Réduction 20 % : plein droit vs écrêtement
-<a id="__codelineno-7-12" name="__codelineno-7-12"></a>    ((1, 0, 17000), None),  # diagnostique
-<a id="__codelineno-7-13" name="__codelineno-7-13"></a>    ((2, 0, 34000), None),  # diagnostique
-<a id="__codelineno-7-14" name="__codelineno-7-14"></a>    ((1, 0, 20000), None),  # diagnostique
-<a id="__codelineno-7-15" name="__codelineno-7-15"></a>    ((2, 0, 40000), None),  # diagnostique
+<a id="__codelineno-7-11" name="__codelineno-7-11"></a>    <span class="c1"># Réduction 20 % : plein droit vs écrêtement</span>
+<a id="__codelineno-7-12" name="__codelineno-7-12"></a>    <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">17000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>  <span class="c1"># diagnostique</span>
+<a id="__codelineno-7-13" name="__codelineno-7-13"></a>    <span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">34000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>  <span class="c1"># diagnostique</span>
+<a id="__codelineno-7-14" name="__codelineno-7-14"></a>    <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">20000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>  <span class="c1"># diagnostique</span>
+<a id="__codelineno-7-15" name="__codelineno-7-15"></a>    <span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">40000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>  <span class="c1"># diagnostique</span>
 <a id="__codelineno-7-16" name="__codelineno-7-16"></a>
-<a id="__codelineno-7-17" name="__codelineno-7-17"></a>    # Changement de parts (plafonnement QF)
-<a id="__codelineno-7-18" name="__codelineno-7-18"></a>    ((2, 1, 80000), None),
-<a id="__codelineno-7-19" name="__codelineno-7-19"></a>    ((2, 2, 80000), None),
-<a id="__codelineno-7-20" name="__codelineno-7-20"></a>    ((2, 3, 80000), None),
-<a id="__codelineno-7-21" name="__codelineno-7-21"></a>]
+<a id="__codelineno-7-17" name="__codelineno-7-17"></a>    <span class="c1"># Changement de parts (plafonnement QF)</span>
+<a id="__codelineno-7-18" name="__codelineno-7-18"></a>    <span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">80000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>
+<a id="__codelineno-7-19" name="__codelineno-7-19"></a>    <span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">80000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>
+<a id="__codelineno-7-20" name="__codelineno-7-20"></a>    <span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">80000</span><span class="p">),</span> <span class="kc">None</span><span class="p">),</span>
+<a id="__codelineno-7-21" name="__codelineno-7-21"></a><span class="p">]</span>
 </code></pre></div></td></tr></table></div>
 <p>Il y a maintenant 25 tests unitaires. J’ai vérifié manuellement les 11 nouveaux tests avec le simulateur officiel de la DGIP et c’est bon.</p>
 <p>Maintenant, on passe à Gemini. Cela va être beaucoup plus compliqué. Il va réussir à générer un script qui passe les 25 tests de ChatGPT mais après un long débogage.</p>
@@ -1776,6 +1790,8 @@
 
 
 
+  
+
 
 
 
@@ -1822,7 +1838,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "navigation.expand", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.sections", "navigation.indexes", "toc.integrate", "navigation.top"], "search": "assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.e71a0d61.min.js"></script>
