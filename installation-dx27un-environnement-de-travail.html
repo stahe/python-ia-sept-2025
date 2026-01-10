@@ -65,14 +65,10 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
-    // CORRECTION ICI : Utilisation de guillemets doubles pour entourer le titre qui contient une apostrophe
     var siteName = "Générer un script Python avec des outils d’IA";
-
     gtag('config', 'G-EBZC3JVJNR', {
         'page_title': siteName
     });
-    console.log("[GA Debug] page_title forced to: " + siteName);
   </script>
 
     
@@ -712,12 +708,12 @@
 <p><strong>Lignes</strong> :</p>
 <ul>
 <li>1 : initialisation d&#x27;une variable. En Python, on ne déclare pas le type des variables. Celles-ci ont automatiquement le type de la valeur qu&#x27;on leur affecte. Ce type peut changer au cours du temps ;</li>
-<li>2 : affichage du nom. &#x27;nom=%s&#x27; est un format d&#x27;affichage où %s est un paramètre formel désignant une chaîne de caractères. nom est le paramètre effectif qui sera affiché à la place de %s ;</li>
+<li>2 : affichage du nom. &#x27;<em>nom=%s</em>&#x27; est un format d&#x27;affichage où %s est un paramètre formel désignant une chaîne de caractères. <em>nom</em> est le paramètre effectif qui sera affiché à la place de %s ;</li>
 <li>3 : le résultat de l&#x27;affichage ;</li>
-<li>4 : l&#x27;affichage du type de la variable nom ;</li>
-<li>5 : la variable nom est ici de type class. Avec Python 2.7 elle aurait la valeur &lt;type &#x27;str&#x27;&gt; ;
-Maintenant, ouvrons une console Windows :</li>
+<li>4 : l&#x27;affichage du type de la variable <em>nom ;</em></li>
+<li>5 : la variable nom est ici de type <em>class</em>. Avec Python 2.7 elle aurait la valeur <em>&lt;type &#x27;str&#x27;&gt;</em> ;</li>
 </ul>
+<p>Maintenant, ouvrons une console Windows :</p>
 <p><img src="images/1000000000000448000000DC8C8ABD0C.png" style="width:15.499cm;height:3.11cm;" alt="Image" /></p>
 <p>Le fait qu&#x27;on ait pu taper <strong>[python]</strong> en <strong>[1]</strong> et que l&#x27;exécutable <strong>[python.exe]</strong> ait été trouvé montre que celui-ci est dans le PATH de la machine Windows. C&#x27;est important car cela signifie que les outils de développement Python sauront trouver l&#x27;interpréteur Python. On peut le vérifier ainsi :</p>
 <p><img src="images/100000000000052F000001AB84273FD6.png" style="width:17.999cm;height:5.791cm;" alt="Image" /></p>
@@ -737,32 +733,32 @@ Maintenant, ouvrons une console Windows :</li>
 <li>En [1] pour créer l’icône PyCharm sur le bureau ;</li>
 <li>En [2] pour ouvrir n’importe quel dossier du système de fichiers comme un projet Python ;</li>
 <li>En [3], les fichiers Python auront le suffixe .py ;</li>
-<li>En [4], passer à l’étape suivante ;
-La fenêtre suivante propose de nouveau de la configuration [1] :</li>
+<li>En [4], passer à l’étape suivante ;</li>
 </ul>
+<p>La fenêtre suivante propose de nouveau de la configuration [1] :</p>
 <p><img src="images/10000000000004370000039D9F52BCA9.png" style="width:11.37cm;height:9.751cm;" alt="Image" /></p>
 <ul>
 <li>En [2], on prend le thème [Light]. Le lecteur prendra le thème de son choix ;</li>
 <li>En [3], on laisse l’IDE en anglais ;</li>
-<li>En [4], on garde les raccourcis de Windows ;
- Créons un premier projet Python [1-2] :</li>
+<li>En [4], on garde les raccourcis de Windows ;</li>
 </ul>
+<p>Créons un premier projet Python [1-2] :</p>
 <p><img src="images/100000000000056A0000020AC0E6D732.png" style="width:12.16cm;height:4.581cm;" alt="Image" /></p>
 <p>Cela ouvre la fenêtre suivante :</p>
 <p><img src="images/1000000000000770000003F35F07ECD2.png" style="width:17.999cm;height:9.557cm;" alt="Image" /></p>
 <ul>
 <li>En [2], indiquer le nom du dossier à créer pour le projet ;</li>
 <li>En [3], indiquer que les différentes versions du code qui seront sauvegardées seront gérées par le gestionnaire de versions Git. PyCharm permet d’en utiliser d’autres ;</li>
-<li>En [4-6], indiquer que votre projet va utiliser un environnement virtuel. L’environnement virtuel va créer un dossier [.venv] à la racine du projet. Tous les plugins (packages) utilisés par votre projet iront dans ce dossier. Cela assure une étanchéité entre projets lorsqu’il y a recherche de plugins. Le projet ne cherche ses plugins que dans son propre environnement virtuel [.venv] et pas ailleurs où il pourrait trouver des plugins de mêmes noms mais de versions peut-être différentes qui sont parfois partiellement incompatibles entre elles ;
-L&#x27;IDE PyCharm présente le projet créé sous la forme suivante :</li>
+<li>En [4-6], indiquer que votre projet va utiliser un environnement virtuel. L’environnement virtuel va créer un dossier [.venv] à la racine du projet. Tous les plugins (packages) utilisés par votre projet iront dans ce dossier. Cela assure une étanchéité entre projets lorsqu’il y a recherche de plugins. Le projet ne cherche ses plugins que dans son propre environnement virtuel [.venv] et pas ailleurs où il pourrait trouver des plugins de mêmes noms mais de versions peut-être différentes qui sont parfois partiellement incompatibles entre elles ;</li>
 </ul>
+<p>L&#x27;IDE PyCharm présente le projet créé sous la forme suivante :</p>
 <p><img src="images/1000000000000231000001339349AD15.png" style="width:4.949cm;height:2.709cm;" alt="Image" /></p>
 <ul>
 <li>En [1-2], l’arborescence du projet ;</li>
 <li>En [3], le dossier du projet ;</li>
-<li>En [4], le dossier de l’environnement virtuel du projet. C’est dans ce dossier que s’installeront les plugins que nous utiliserons pour le projet ;
-Avant de commencer à coder, allons plus loin dans la configuration de l’IDE :</li>
+<li>En [4], le dossier de l’environnement virtuel du projet. C’est dans ce dossier que s’installeront les plugins que nous utiliserons pour le projet ;</li>
 </ul>
+<p>Avant de commencer à coder, allons plus loin dans la configuration de l’IDE :</p>
 <p><img src="images/100000000000014B000000C3A5AE436A.png" style="width:4.671cm;height:2.75cm;" alt="Image" /></p>
 <ul>
 <li>Cliquer sur [1] pour faire apparaître le menu principal ;</li>
@@ -773,9 +769,9 @@ Avant de commencer à coder, allons plus loin dans la configuration de l’IDE 
 </ul>
 <p><img src="images/10000000000003F7000002C8C9A0B9F5.png" style="width:10.749cm;height:7.541cm;" alt="Image" /></p>
 <ul>
-<li>En [1-4], indiquez que vous voulez voir le menu principal au-dessus de la barre d’outils principale. Rien ne vous y oblige. On le fait ici pour éclairer les copies d’écran qui sont produites dans ce document. Validez votre changement ;
-Désormais, le menu principal est toujours affiché [1] :</li>
+<li>En [1-4], indiquez que vous voulez voir le menu principal au-dessus de la barre d’outils principale. Rien ne vous y oblige. On le fait ici pour éclairer les copies d’écran qui sont produites dans ce document. Validez votre changement ;</li>
 </ul>
+<p>Désormais, le menu principal est toujours affiché [1] :</p>
 <p><img src="images/100000000000033F00000164BC5ACCBA.png" style="width:8.8cm;height:3.769cm;" alt="Image" /></p>
 <p>Continuons la configuration de l’IDE :</p>
 <p><img src="images/1000000000000120000000ABAB5ED904.png" style="width:3.05cm;height:1.81cm;" alt="Image" /></p>
@@ -789,23 +785,23 @@ Désormais, le menu principal est toujours affiché [1] :</li>
 </ul>
 <p><img src="images/10000000000004660000017297512600.png" style="width:11.869cm;height:3.9cm;" alt="Image" /></p>
 <ul>
-<li>En [1], désactivez la version pro. L’IDE va se relancer ;
-Maintenant configurons l’interpréteur Python qui va exécuter notre projet. Nous nous souvenons d’en avoir téléchargé un lors d’une étape précédente :</li>
+<li>En [1], désactivez la version pro. L’IDE va se relancer ;</li>
 </ul>
+<p>Maintenant configurons l’interpréteur Python qui va exécuter notre projet. Nous nous souvenons d’en avoir téléchargé un lors d’une étape précédente :</p>
 <p><img src="images/10000000000001B10000021D45A1E9E0.png" style="width:4.59cm;height:5.731cm;" alt="Image" /></p>
 <p><img src="images/10000000000005BB0000014E06FF13F7.png" style="width:15.42cm;height:3.51cm;" alt="Image" /></p>
 <ul>
 <li>En [1-3], nous configurons l’interpréteur Python du projet ;</li>
 <li>En [4], le chemin de l’interpréteur ;</li>
-<li>En [5], les packages (plugins) associés à cet interpréteur ;
-En [4], découvrons le chemin complet de l’interpréteur utilisé :</li>
+<li>En [5], les packages (plugins) associés à cet interpréteur ;</li>
 </ul>
+<p>En [4], découvrons le chemin complet de l’interpréteur utilisé :</p>
 <p><img src="images/100000000000043900000135000327CB.png" style="width:11.471cm;height:3.281cm;" alt="Image" /></p>
 <p><img src="images/100000000000049C000000CACC2BB23E.png" style="width:12.561cm;height:2.15cm;" alt="Image" /></p>
 <ul>
-<li>En [3], on découvre que l’interpréteur Python utilisé se trouve dans le dossier de l’environnement virtuel du projet [.venv] ;
-Il est possible de changer d’interpréteur Python, ce qui peut changer les plugins disponibles au projet :</li>
+<li>En [3], on découvre que l’interpréteur Python utilisé se trouve dans le dossier de l’environnement virtuel du projet [.venv] ;</li>
 </ul>
+<p>Il est possible de changer d’interpréteur Python, ce qui peut changer les plugins disponibles au projet :</p>
 <p><img src="images/10000000000005BC00000132A5AE6115.png" style="width:18cm;height:3.75cm;" alt="Image" /></p>
 <ul>
 <li>En [4], ajoutez un interpréteur Python ;</li>
@@ -837,9 +833,9 @@ Il est possible de changer d’interpréteur Python, ce qui peut changer les plu
 <li>En [6], lorsqu’on quitte l’IDE et qu’il y a un processus en cours d’exécution lancé par le code exécuté, on arrête celui-ci ;</li>
 <li>En [7], lorsque l’IDE est lancée, on ne rouvre pas automatiquement le dernier projet utilisé. On laisse l’utilisateur choisir son projet ;</li>
 <li>En [8], lorsque l’utilisateur gère plusieurs projets en même temps, chaque projet a sa fenêtre personnelle ;</li>
-<li>En [9], on a désigné le dossier par défaut de notre projet ;
-Maintenant nous pouvons commencer à coder. Commençons par créer un dossier dans lequel nous mettrons notre premier script Python :</li>
+<li>En [9], on a désigné le dossier par défaut de notre projet ;</li>
 </ul>
+<p>Maintenant nous pouvons commencer à coder. Commençons par créer un dossier dans lequel nous mettrons notre premier script Python :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000041D0000017D721E4B11.png" style="display:inline-block; margin:4px;width:11.141cm;height:4.03cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/100000000000021A000000A4CC322650.png" style="display:inline-block; margin:4px;width:5.71cm;height:1.739cm;" /></td></tr></table>
 
 <ul>
@@ -855,20 +851,22 @@ Maintenant nous pouvons commencer à coder. Commençons par créer un dossier da
 
 <ul>
 <li>Rappelons-nous ici que nous avons inclus le gestionnaire de versions Git à notre projet. Cela s’est fait lors de la création du projet où nous avons coché l’option Git. Git peut prendre des photos du projet à différentes étapes de celui-ci. Ici en [1-3], l’IDE nous demande si nous voulons inclure le fichier [bases.py] que nous sommes en train de créer dans la photo. Nous répondons oui [3]. Par ailleurs nous cochons [2] pour que cela soit fait systématiquement à la création d’un fichier. Nous reviendrons brièvement sur Git un peu plus loin ;</li>
-<li>En [4-5], le script [bases_01] a été créé et est prêt à être édité ;
-Écrivons notre premier script :</li>
+<li>En [4-5], le script [bases_01] a été créé et est prêt à être édité ;</li>
 </ul>
+<p>Écrivons notre premier script :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000261000000CCCCD847A9.png" style="display:inline-block; margin:4px;width:6.451cm;height:2.161cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000002B1000002F78DEFD05E.png" style="display:inline-block; margin:4px;width:7.29cm;height:8.029cm;" /></td></tr></table>
 
 <ul>
 <li>Lignes 1, 3 : les commentaires commencent avec le signe # ;</li>
 <li>Ligne 2 : initialisation d&#x27;une variable. Python ne déclare pas le type de ses variables ;</li>
-<li>Ligne 4 : affichage écran. La syntaxe utilisée ici est <strong>[</strong><strong>format % données</strong><strong>]</strong> avec :</li>
+<li>Ligne 4 : affichage écran. La syntaxe utilisée ici est <strong>[</strong><strong>format % données</strong><strong>]</strong> avec :<ul>
 <li><strong>format</strong> : nom=%s où %s désigne l&#x27;emplacement d&#x27;une chaîne de caractères. Celle-ci sera trouvée dans la partie <strong>[données]</strong> de l&#x27;expression ;</li>
 <li><strong>données</strong> : la valeur de la variable <strong>[nom]</strong> viendra remplacer le format %s dans la chaîne de format ;</li>
-<li>Avec <strong>[1-2]</strong>, on reformate le code selon les recommandations de l&#x27;organisme gérant Python. On peut aussi taper au clavier la séquence Ctrl-Alt-L ;
-Sur la copie d’écran on voit que certains textes sont soulignés. PyCharm signale des erreurs d’orthographe dans les commentaires et chaînes de caractères. Il les appelle des <strong>typos</strong>. Il est par défaut configuré pour des textes en anglais. Pour éviter le signalement des typos en français, procédons comme suit :</li>
 </ul>
+</li>
+<li>Avec <strong>[1-2]</strong>, on reformate le code selon les recommandations de l&#x27;organisme gérant Python. On peut aussi taper au clavier la séquence Ctrl-Alt-L ;</li>
+</ul>
+<p>Sur la copie d’écran on voit que certains textes sont soulignés. PyCharm signale des erreurs d’orthographe dans les commentaires et chaînes de caractères. Il les appelle des <strong>typos</strong>. Il est par défaut configuré pour des textes en anglais. Pour éviter le signalement des typos en français, procédons comme suit :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000243000002049B2BB9E8.png" style="display:inline-block; margin:4px;width:6.13cm;height:5.459cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003940000031B8E28874D.png" style="display:inline-block; margin:4px;width:9.691cm;height:8.41cm;" /></td></tr></table>
 
 <ul>
@@ -882,9 +880,9 @@ Sur la copie d’écran on voit que certains textes sont soulignés. PyCharm sig
 <ul>
 <li>En [1-2], une fenêtre de résultats s’est ouverte ;</li>
 <li>En [3], on voit que le code de [bases_01.py] a été exécuté par l’interpréteur Python de l’environnement virtuel du projet ;</li>
-<li>En [4], le résultat de l’exécution ;
-Pour exécuter les scripts de ce document, téléchargez le code à l&#x27;URL |<a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9mNTNhOTE5ZjQzZDI3ZWI1L0VpNzRCOGJkaDNoSXR6MktmZHVTSTJ3QnYwVGtMaklnVkRjOENfX01SWHk3M2c%5FZT1UdHU5eFM&amp;id=F53A919F43D27EB5%21sc607f82e87dd4878b73d8a7ddb92236c&amp;cid=F53A919F43D27EB5"><u><u>Générer un script Python avec des outils d&#x27;IA</u></u></a>| (cloud OneDrive) puis dans PyCharm procédez comme suit :</li>
+<li>En [4], le résultat de l’exécution ;</li>
 </ul>
+<p>Pour exécuter les scripts de ce document, téléchargez le code à l&#x27;URL |<a href="https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy9mNTNhOTE5ZjQzZDI3ZWI1L0VpNzRCOGJkaDNoSXR6MktmZHVTSTJ3QnYwVGtMaklnVkRjOENfX01SWHk3M2c%5FZT1UdHU5eFM&amp;id=F53A919F43D27EB5%21sc607f82e87dd4878b73d8a7ddb92236c&amp;cid=F53A919F43D27EB5"><u><u>Générer un script Python avec des outils d&#x27;IA</u></u></a>| (cloud OneDrive) puis dans PyCharm procédez comme suit :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000131000001C7FB4D5D86.png" style="display:inline-block; margin:4px;width:3.769cm;height:5.62cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
@@ -904,9 +902,9 @@ Pour exécuter les scripts de ce document, téléchargez le code à l&#x27;URL |
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000004F500000491445627B1.png" style="display:inline-block; margin:4px;width:10.111cm;height:9.31cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>En [1-2], le projet PyCharm ; 
-Configurons ce projet pour qu’il ait un environnement virtuel d’exécution :</li>
+<li>En [1-2], le projet PyCharm ; </li>
 </ul>
+<p>Configurons ce projet pour qu’il ait un environnement virtuel d’exécution :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000001D6000002A0FC82F3CC.png" style="display:inline-block; margin:4px;width:3.731cm;height:5.33cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
@@ -925,9 +923,9 @@ Configurons ce projet pour qu’il ait un environnement virtuel d’exécution�
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/1000000000000752000001C6E08AB521.png" style="display:inline-block; margin:4px;width:14.78cm;height:3.581cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 <ul>
-<li>En [7], le nouvel interpréteur Python utilisé pour le projet ;
-Ceci fait, vous pouvez exécuter les scripts du projet :</li>
+<li>En [7], le nouvel interpréteur Python utilisé pour le projet ;</li>
 </ul>
+<p>Ceci fait, vous pouvez exécuter les scripts du projet :</p>
 <table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><img src="images/10000000000003330000031A128698EE.png" style="display:inline-block; margin:4px;width:6.5cm;height:6.301cm;" /></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;">&nbsp;</td></tr></table>
 
 
@@ -968,7 +966,7 @@ Ceci fait, vous pouvez exécuter les scripts du projet :</li>
           https://tahe.developpez.com
         </a>
         <br>
-        Ce cours tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
+        Ce cours-tutoriel écrit par <strong>Serge Tahé</strong> est mis à disposition du public selon les termes de la
         <em>Licence Creative Commons Attribution – Pas d’Utilisation Commerciale –
         Partage dans les Mêmes Conditions 3.0 non transposé</em>.
       </div>
